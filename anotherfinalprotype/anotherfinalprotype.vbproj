@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A244BA1D-CE85-4118-ADC2-A0C34112EE5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>anotherfinalprotype.My.MyApplication</StartupObject>
+    <RootNamespace>anotherfinalprotype</RootNamespace>
+    <AssemblyName>anotherfinalprotype</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>anotherfinalprotype.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>anotherfinalprotype.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BestViewofTickets.vb" />
+    <Compile Include="ClassesReporter.vb" />
+    <Compile Include="EmailingUpdatetoReporter.Designer.vb">
+      <DependentUpon>EmailingUpdatetoReporter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmailingUpdatetoReporter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailTechnicanList.Designer.vb">
+      <DependentUpon>EmailTechnicanList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmailTechnicanList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageForm.Designer.vb">
+      <DependentUpon>ImageForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImageForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailItem.vb" />
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NameSpace.vb" />
+    <Compile Include="OpenTickets.Designer.vb">
+      <DependentUpon>OpenTickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpenTickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporters.Designer.vb">
+      <DependentUpon>Reporters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="security.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="security.Designer.vb">
+      <DependentUpon>security.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TechnicanGui.Designer.vb">
+      <DependentUpon>TechnicanGui.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TechnicanGui.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTicket.vb" />
+    <Compile Include="WelcomeManager.Designer.vb">
+      <DependentUpon>WelcomeManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmailingUpdatetoReporter.resx">
+      <DependentUpon>EmailingUpdatetoReporter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailTechnicanList.resx">
+      <DependentUpon>EmailTechnicanList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageForm.resx">
+      <DependentUpon>ImageForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenTickets.resx">
+      <DependentUpon>OpenTickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporters.resx">
+      <DependentUpon>Reporters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="security.resx">
+      <DependentUpon>security.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechnicanGui.resx">
+      <DependentUpon>TechnicanGui.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeManager.resx">
+      <DependentUpon>WelcomeManager.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
